@@ -28,6 +28,7 @@ void openFile(ifstream& inFile,string fname){
 string processFile(ifstream& inFile,int i, int limit){
 	//read line by line
 	string line;
+	vector<string> line2; 
 	while (!inFile.eof() && i < limit){
 		i++;
 		getline(inFile,line);
